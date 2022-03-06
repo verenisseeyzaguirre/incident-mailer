@@ -2,5 +2,6 @@
   <%= f.input :subject, :label => "Asunto" %>
   <%= f.input :description, :label => "Descripción" %>
   <%= f.input :incident_date, :label => "Fecha de incidencia"%>
-  <%= f.button :submit, class: "btn-primary" %>
+  <%= f.input :photos, as: :file, :label => "Fotos", input_html: { multiple: true } %>
+  <%= f.button :submit, "Enviar incidencia", class: "btn-primary" %>
 <% end %>
