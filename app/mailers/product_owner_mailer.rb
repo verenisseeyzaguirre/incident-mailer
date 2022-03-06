@@ -6,8 +6,7 @@ class ProductOwnerMailer < ApplicationMailer
   #   en.product_owner_mailer.incident.subject
   #
   def incident
-    @greeting = "Hi"
-
-    mail to: "to@example.org"
+    @incident = params[:incident]
+    mail to: ENV['MAIL_TO'], subject: @incident.subject
   end
 end

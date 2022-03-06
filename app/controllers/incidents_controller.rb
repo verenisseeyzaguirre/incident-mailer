@@ -7,6 +7,8 @@ class IncidentsController < ApplicationController
   def create
     @incident = Incident.new(incident_params)
     if @incident.save
+      mail = ProductOwnerMailer.with(incident: @incident).incident
+      mail.deliver_now
       redirect_to incident_path(@incident)
     else
       render :new
