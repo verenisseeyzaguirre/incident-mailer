@@ -1,0 +1,15 @@
+.container
+  .row.justify-content-center
+    .col-6
+      .mt-5.text-center
+        h2
+          | Resumen de reporte
+        h3
+          = @incident.subject
+        p
+          = @incident.incident_date
+        p.text-justify
+          = @incident.description
+        - @incident.photos.each do |photo|
+          p
+            = cl_image_tag photo.key, height: 300, width: 400, crop: :fill
