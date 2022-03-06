@@ -6,9 +6,9 @@
           | Resumen de reporte
         h3
           = @incident.subject
-        p
+        p.mt-2
           = @incident.incident_date
-        p
+        p.text-sm-start
           == @incident.description
         - @incident.photos.each do |photo|
           p
