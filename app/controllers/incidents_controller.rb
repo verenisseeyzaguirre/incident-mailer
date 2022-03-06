@@ -14,7 +14,7 @@ class IncidentsController < ApplicationController
   end
 
   def show
-    @incident = Incident.find(params[:id])
+    @incident = Incident.friendly.find(params[:id])
   end
 
   private
