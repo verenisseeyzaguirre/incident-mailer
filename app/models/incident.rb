@@ -2,6 +2,8 @@ class Incident < ApplicationRecord
   has_many_attached :photos
   has_rich_text :description
 
+  validates :subject, :description, :photos, presence: true
+
   extend FriendlyId
   friendly_id :hashid, use: :slugged
 
