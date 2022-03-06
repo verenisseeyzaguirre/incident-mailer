@@ -1,0 +1,22 @@
+.heading h2 {
+  margin: 0;
+  color: $gjom-blue;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.heading h3 {
+  margin: 0;
+  color: $gjom-h3;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+//modifying trix styles in form
+.incident_incident_date {
+  margin: 15px 0 7px;
+}
+
+#trix-toolbar-1 {
+  margin-top: 7px;
+}

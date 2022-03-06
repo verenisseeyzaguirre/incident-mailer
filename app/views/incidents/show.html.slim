@@ -1,0 +1,15 @@
+.container
+  .row.justify-content-center
+    .col-6
+      .book-card-m0.mt-5.text-center.heading
+        h2
+          | Resumen de reporte
+        h3
+          = @incident.subject
+        p.mt-2
+          = @incident.incident_date
+        p.text-sm-start
+          == @incident.description
+        - @incident.photos.each do |photo|
+          p
+            = cl_image_tag photo.key, height: 300, width: 400, crop: :fill

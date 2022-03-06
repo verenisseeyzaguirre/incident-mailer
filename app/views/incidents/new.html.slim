@@ -1,0 +1,11 @@
+.container
+  .row.justify-content-center
+    .col-8
+      .book-card-m0.mt-5.heading
+        h2
+          | Formulario de incidencias
+        p.mt-3
+          | Aquí podrás indicar en detalle lo acontecido es nuestra aplicación, al enviarlo nuestro equipo lo recibirá y se encargará de gestionarlo y resolverlo.
+        p.mb-3
+          | Te dejamos ejemplos de inciencias: Errores al crear un anuncio, fallos en el buscador, correos que no llegan a tiempo, etc.
+        = render "form", incident: @incident
