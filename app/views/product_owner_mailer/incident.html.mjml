@@ -1,0 +1,43 @@
+<mjml>
+  <mj-head>
+    <mj-title>Nueva incidencia</mj-title>
+    <mj-font name="Alice" href="https://fonts.googleapis.com/css?family=Alice"></mj-font>
+    <mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto:400,700"></mj-font>
+    <mj-attributes>
+      <mj-all font-family="Roboto, Helvetica, Arial, sans-serif" padding="0px"></mj-all>
+      <mj-text font-weight="400" font-size="14px" color="#000000" line-height="21px"></mj-text>
+    </mj-attributes>
+  </mj-head>
+  <mj-body background-color="#f87a34">
+    <mj-section padding="20px 0 0 0">
+      <mj-column>
+        <mj-image src="http://nimus.de/share/tpl-realestate/box-head.png" alt="" align="center" border="none" padding="0px"></mj-image>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="20px" background-color="#FFFFFF">
+      <mj-column width="100%">
+        <mj-image src="http://nimus.de/share/tpl-realestate/symbol-1.png" alt="" width="292px" align="left" border="none"></mj-image>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="0 20px" background-color="#FFFFFF">
+      <mj-column>
+        <mj-text align="center" color="#0d81ff" font-size="26px" line-height="30px" font-family="Alice, Helvetica, Arial, sans-serif">Nueva Incidencia</mj-text>
+        <mj-divider width="20px" padding="20px 0" border-width="2px" border-color="#000000"></mj-divider>
+        <%= render partial: "date", formats: [:html] %>
+        <%= render partial: "description", formats: [:html] %>
+
+      </mj-column>
+    </mj-section>
+    <mj-section padding="20px" background-color="#FFFFFF">
+      <mj-column width="100%">
+        <mj-image src="http://nimus.de/share/tpl-realestate/symbol-2.png" alt="" width="213px" align="right" border="none"></mj-image>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#FFFFFF">
+      <mj-column>
+        <%= render partial: "photos", formats: [:html] %>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

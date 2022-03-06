@@ -1,9 +1,0 @@
-<h1>Nuevo incidente</h1>
-
-<p><%= @incident.incident_date %></p>
-<p><%= @incident.description %></p>
-
-
-<% @incident.photos.each do |photo| %>
-  <p><%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %></p>
-<% end %>
