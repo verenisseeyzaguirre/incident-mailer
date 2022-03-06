@@ -32,9 +32,11 @@ gem 'autoprefixer-rails', '10.2.5'
 gem 'font-awesome-sass'
 gem 'simple_form'
 
+# Project specific gems
 gem 'friendly_id', '~> 5.3'
 gem 'cloudinary', '~> 1.16.0'
 gem 'mjml-rails'
+gem "slim-rails"
 
 group :development, :test do  gem 'pry-byebug'
   gem 'pry-rails'
