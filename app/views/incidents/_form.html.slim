@@ -1,6 +1,7 @@
 = simple_form_for(incident) do |f|
   = f.input :subject, :label => "Asunto"
-  = f.input :description, :label => "Descripción"
+  = f.label :Descripción, :input_html => { :class => 'mb-1' }
+  = f.rich_text_area :description
   = f.input :incident_date, :label => "Fecha de incidencia"
   = f.input :photos, as: :file, :label => "Fotos", input_html: { multiple: true }
   = f.button :submit, "Enviar incidencia", class: "btn-primary"

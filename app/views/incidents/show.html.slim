@@ -8,8 +8,8 @@
           = @incident.subject
         p
           = @incident.incident_date
-        p.text-justify
-          = @incident.description
+        p
+          == @incident.description
         - @incident.photos.each do |photo|
           p
             = cl_image_tag photo.key, height: 300, width: 400, crop: :fill

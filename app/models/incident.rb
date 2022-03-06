@@ -1,5 +1,6 @@
 class Incident < ApplicationRecord
   has_many_attached :photos
+  has_rich_text :description
 
   extend FriendlyId
   friendly_id :hashid, use: :slugged
